@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@theme {
+  --press-start-2: "Press Start 2P", sans-serif;
+  --mulish: "Mulish", sans-serif;
+}
