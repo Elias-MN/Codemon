@@ -2,7 +2,7 @@ function LoginForm() {
   return (
     <div className="flex items-center justify-center flex-col min-h-screen bg-blue-950 font-['Mulish']">
       
-      <h1 className="text-3xl mb-8 font-bold text-center text-gray-50 md:hidden font-['Press_Start_2P']">
+      <h1 className="text-2xl mb-8 font-bold text-center text-gray-50 md:hidden font-['Press_Start_2P']">
         Iniciar Sesión
       </h1>
 
@@ -12,19 +12,17 @@ function LoginForm() {
 
       <div className="w-11/12 max-w-md p-6 bg-gray-50 rounded-2xl shadow-xl md:w-13/24 lg:w-7/24 relative">
         
-        <div className="flex items-center justify-center gap-4 mt-6">
-          <button className="px-4 py-2 font-medium text-gray-50 bg-blue-400 rounded-lg shadow-md hover:shadow-lg hover:opacity-80 active:shadow-inner transition">
+        <div className="flex items-center justify-around mt-6">
+          <button className="px-8 py-3 font-medium text-gray-50 bg-blue-400 rounded-lg shadow-lg hover:shadow-lg hover:opacity-80 active:shadow-inner transition cursor-pointer">
             Google
           </button>
-          <button className="px-4 py-2 font-medium text-gray-50 bg-blue-400 rounded-lg shadow-md hover:shadow-lg hover:opacity-80 active:shadow-inner transition">
+          <button className="px-8 py-3 font-medium text-gray-50 bg-blue-400 rounded-lg shadow-md hover:shadow-lg hover:opacity-80 active:shadow-inner transition cursor-pointer">
             GitHub
           </button>
         </div>
 
-        <div className="relative flex items-center my-6">
-          <div className="flex-grow border-t border-blue-900"></div>
-          <span className="mx-2 text-lg text-blue-900">o</span>
-          <div className="flex-grow border-t border-blue-900"></div>
+        <div className="relative flex items-center justify-center my-6">
+          <span className="mx-2 text-lg text-blue-900">-O-</span>
         </div>
 
         <form>
@@ -47,7 +45,7 @@ function LoginForm() {
           
           <button
             type="submit"
-            className="w-full px-4 py-2 text-gray-50 bg-blue-400 rounded-lg shadow-md hover:shadow-lg hover:opacity-80 active:shadow-inner transition focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full px-4 py-2 text-gray-50 bg-blue-400 rounded-lg shadow-md hover:shadow-lg hover:opacity-80 active:shadow-inner transition focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer"
           >
             Iniciar Sesión
           </button>
@@ -56,7 +54,7 @@ function LoginForm() {
         <div className="mt-4 text-center">
           <p className="text-sm text-gray-900">
             ¿Necesitas una Cuenta?{" "}
-            <a href="#" className="font-medium text-blue-900 hover:underline">
+            <a href="#" className="font-medium text-blue-900 underline">
               Regístrate
             </a>
           </p>
