@@ -1,20 +1,20 @@
 export function Stadistics() {
   return (
     <div className="bg-blue-950 text-white py-6 px-4 text-2xl font-mulish font-bold">
-      <div className="max-w-md mx-auto flex justify-between text-center">
+      <div className="flex justify-evenly text-center">
         <div>
-          <p className="text-yellow-400">15</p>
-          <p className="">Usuarios</p>
+          <strong className="text-yellow-400 md:text-3xl">18</strong>
+          <p className="text-base md:text-2xl">Usuarios</p>
         </div>
 
         <div>
-          <p className="text-yellow-400">190</p>
-          <p className="">Tareas hechas</p>
+          <strong className="text-yellow-400 md:text-3xl">190</strong>
+          <p className="text-base md:text-2xl">Tareas hechas</p>
         </div>
 
         <div>
-          <p className="text-yellow-400 ">5050</p>
-          <p className="">Puntos</p>
+          <strong className="text-yellow-400 md:text-3xl">5050</strong>
+          <p className="text-base md:text-2xl">Puntos</p>
         </div>
       </div>
     </div>
