@@ -1,11 +1,11 @@
 function TasksList() {
     return (
-        <div className="bg-blue-950 text-gray-50 min-h-screen w-screen p-4 font-mulish">
+        <div className=" text-gray-50 min-h-screen w-full p-4 font-mulish">
 
             <div className="grid grid-cols-1 md:grid-cols-12 gap-4 h-full">
 
                 <section className="col-span-12 md:col-span-3 lg:col-span-2 bg-blue-900 p-4 rounded-lg">
-                    <h3 className="text-center text-xl font-semibold mb-4 p-4">Estadísticas</h3>
+                    <h3 className="text-center font-bold text-xl mb-4 p-4">Estadísticas</h3>
                     <div className="flex justify-around text-center flex-row md:flex-col">
                         <div className='md:p-4'>
                             <h4 className="font-semibold">Tareas por hacer</h4>
@@ -24,7 +24,7 @@ function TasksList() {
                 </section>
 
                 <main className="col-span-12 md:col-span-9 lg:col-span-10 p-2 sm:p-4">
-                    <h2 className="text-2xl font-bold mb-4 text-center">Proyectos</h2>
+                    <h3 className="text-2xl font-bold mb-4 text-center">Proyectos</h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
