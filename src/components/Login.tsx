@@ -6,7 +6,7 @@ function LoginForm() {
         Iniciar Sesión
       </h1>
 
-      <div className="hidden md:block mb-8 transform bg-gray-50 md:w-11/24 lg:w-7/24 text-center py-4 rounded-lg shadow-md text-gray-900">
+      <div className="hidden md:block mb-8 transform bg-gray-50 md:w-13/24 lg:w-7/24 text-center py-4 rounded-lg shadow-md text-gray-900">
         Inicia sesión para reanudar tu viaje~
       </div>
 
