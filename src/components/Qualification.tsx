@@ -1,48 +1,50 @@
 const Qualification = () => {
-
     return (
-        <div className="flex justify-center items-center">
-            <table className="border">
-                <tr className="bg-blue-900 ">
-                    <th className="border text-gray-50 p-9 rounded-tl-xl">Nombre Estudiante</th>
-                    <th className="border text-gray-50 p-9">Estado Entrega</th>
-                    <th className="border text-gray-50 p-9">Puntos</th>
-                    <th className="border text-gray-50 p-9 rounded-tr-xl"></th>
-                </tr>
-                <tr >
-                    <td className="border p-8">Nombre Estudiante</td>
-                    <td className="border p-8">Entrega: Pendiente</td>
-                    <td className="border p-8">Entrega: X</td>
-                    <td className="border p-8">
-                        <button className="w-28 bg-blue-400 text-gray-50 py-1 rounded-lg mt-4 shadow-lg shadow-gray-500/50 active:shadow-none hover:opacity-60 active:opacity-60 font-mulish">
-                            CALIFICAR
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td className="border p-8">Nombre Estudiante</td>
-                    <td className="border p-8">Entrega: Pendiente</td>
-                    <td className="border p-8">Entrega: X</td>
-                    <td className="border p-8">
-                        <button className="w-28 bg-blue-400 text-gray-50 py-1 rounded-lg mt-4 shadow-lg shadow-gray-500/50 active:shadow-none hover:opacity-60 active:opacity-60 font-mulish">
-                            CALIFICAR
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td className="border p-8 rounded-bl-xl">Nombre Estudiante</td>
-                    <td className="border p-8">Entrega: Pendiente</td>
-                    <td className="border p-8">Entrega: X</td>
-                    <td className="border p-8 rounded-br-xl">
-                        <button className="w-28 bg-blue-400 text-gray-50 py-1 rounded-lg mt-4 shadow-lg shadow-gray-500/50 active:shadow-none hover:opacity-60 active:opacity-60 font-mulish">
-                            CALIFICAR
-                        </button>
-                    </td>
-                </tr>
+        /*<div className="flex justify-center items-center h-screen">*/
+            <table className="bg-white shadow-lg rounded-xl border-separate border-spacing-0 overflow-hidden">
+                <thead className="hidden sm:table-header-group">
+                    <tr className="bg-blue-900 text-white">
+                        <th className="py-7 px-9 border border-black rounded-tl-xl">Nombre Estudiante</th>
+                        <th className="py-7 px-9 border border-black">Estado Entrega</th>
+                        <th className="py-7 px-9 border border-black">Puntos</th>
+                        <th className="py-7 px-9 border border-black rounded-tr-xl"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr className="flex flex-col mb-4 sm:table-row w-2xs">
+                        <td className="py-4 px-9 border border-black rounded-t-xl sm:rounded-none">Nombre Estudiante</td>
+                        <td className="py-4 px-9 border border-black sm:rounded-none">Entrega: Pendiente</td>
+                        <td className="py-4 px-9 border border-black sm:rounded-none">Entrega: X</td>
+                        <td className="py-4 px-9 border border-black sm:rounded-none flex justify-center">
+                            <button className="w-28 bg-blue-400 text-gray-50 py-1 rounded-lg shadow-lg shadow-gray-500/50 active:shadow-none hover:opacity-60 active:opacity-60 cursor-pointe">
+                                CALIFICAR
+                            </button>
+                        </td>
+                    </tr>
+                    <tr className="flex flex-col mb-4 sm:table-row">
+                        <td className="py-4 px-9 border border-black sm:rounded-none">Nombre Estudiante</td>
+                        <td className="py-4 px-9 border border-black sm:rounded-none">Entrega: Pendiente</td>
+                        <td className="py-4 px-9 border border-black sm:rounded-none">Entrega: X</td>
+                        <td className="py-4 px-9 border border-black flex justify-center sm:rounded-none">
+                            <button className="w-28 bg-blue-400 text-gray-50 py-1 rounded-lg shadow-lg shadow-gray-500/50 active:shadow-none hover:opacity-60 active:opacity-60 cursor-pointer">
+                                CALIFICAR
+                            </button>
+                        </td>
+                    </tr>
+                    <tr className="flex flex-col mb-4 sm:table-row">
+                        <td className="py-4 px-9 border border-black sm:rounded-none">Nombre Estudiante</td>
+                        <td className="py-4 px-9 border border-black sm:rounded-none">Entrega: Pendiente</td>
+                        <td className="py-4 px-9 border border-black sm:rounded-none">Entrega: X</td>
+                        <td className="py-4 px-9 border border-black rounded-b-xl flex justify-center sm:rounded-none rounded-br-xl">
+                            <button className="w-28 bg-blue-400 text-gray-50 py-1 rounded-lg shadow-lg shadow-gray-500/50 active:shadow-none hover:opacity-60 active:opacity-60 cursor-pointer">
+                                CALIFICAR
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
             </table>
-        </div>
-    )
-
+        /*</div>*/
+    );
 }
 
 export default Qualification;
