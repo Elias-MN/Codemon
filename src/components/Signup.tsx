@@ -1,7 +1,7 @@
 function RegisterForm() {
   return (
-    <div className="flex flex-col min-h-screen bg-transparent font-['Mulish']">
-      <h1 className="text-2xl mb-8 font-bold text-center text-gray-50 md:hidden font-['Press_Start_2P']">
+    <div className="flex flex-col min-h-screen bg-transparent font-mulish">
+      <h1 className="text-2xl mb-8 font-bold text-center text-gray-50 md:hidden font-press-start-2">
         Registro
       </h1>
       <div className="hidden md:block mb-8 transform bg-gray-50 md:w-13/24 lg:w-7/24 text-center py-4 rounded-lg shadow-md text-gray-900">
