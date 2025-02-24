@@ -1,13 +1,5 @@
-import { Stadistics } from "./components/Stadistics"
-import { Footer } from "./components/Footer"
 function App() {
-
-  return (
-    <>
-    <Stadistics></Stadistics>
-    <Footer></Footer>
-    </>
-  )
+  return <></>;
 }
 
-export default App
+export default App;
