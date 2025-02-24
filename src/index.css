@@ -1,11 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-  --press-start-2: "Press Start 2P", sans-serif;
-  --mulish: "Mulish", sans-serif;
-}
-
-
-.td-class{
-  @apply py-4 px-9 border border-black rounded-t-lg sm:rounded-none
+  --font-press-start-2: "Press Start 2P", sans-serif;
+  --font-mulish: "Mulish", sans-serif;
 }
