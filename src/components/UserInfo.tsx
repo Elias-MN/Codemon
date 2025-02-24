@@ -25,7 +25,7 @@ export function UserInfo() {
         </div>
 
         <div className="ml-auto">
-          <button className="bg-blue-400 text-white px-4 py-2 rounded-lg text-sm md:text-base lg:text-lg hover:bg-blue-500 transition-all">
+          <button className="bg-blue-400 text-white px-4 py-2 rounded-lg text-sm md:text-base lg:text-lg hover:opacity-60 transition-all active:opacity-60">
             Editar perfil
           </button>
         </div>
