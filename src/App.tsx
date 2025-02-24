@@ -1,9 +1,9 @@
-import Qualification from "./components/Qualification";
+
 function App() {
 
   return (
     <>
-      <Qualification />
+
     </>
   )
 }
