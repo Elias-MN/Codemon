@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,13 +14,11 @@ function Header() {
         </div>
         <div className="hidden lg:gap-10 lg:flex lg:w-4/5 lg:justify-evenly">
           <a
-            href="#"
             className="text-2xl font-mulish font-bold text-gray-50 hover:text-gray-300"
           >
             Retos
           </a>
-          <a
-            href="#"
+          {/*cambiar la a por span*/}<a
             className="text-2xl font-mulish font-bold text-gray-50 hover:text-gray-300"
           >
             Recursos
@@ -26,7 +26,7 @@ function Header() {
         </div>
         <div className="hidden lg:flex ml-auto">
           <button className="text-zinc-900 bg-yellow-400 lg:w-32 lg:h-8 rounded-lg font-mulish shadow-md hover:opacity-60 active:opacity-60 active:shadow-none cursor-pointer">
-            <span>Iniciar Sesión</span>
+          <Link to="/login"><span>Iniciar Sesión</span></Link>
           </button>
         </div>
         <button
