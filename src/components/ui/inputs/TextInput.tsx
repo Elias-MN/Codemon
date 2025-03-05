@@ -1,24 +1,51 @@
-import { REGEX, ERROR_MESSAGES } from "./validationRules.ts";
+import React from "react";
+import { UseFormRegister, FieldErrors, RegisterOptions } from "react-hook-form";
+import { REGEX, ERROR_MESSAGES } from "./validationRules";
 
-const Input = ({ label, type, id, name, pattern, error }) => (
-    <div>
-        <label htmlFor={id}>{label}</label>
-        <input type={type} id={id} name={name} pattern={pattern} />
-        <p>{error}</p>
+interface CardFactoryProps {
+  label: string;
+  name: string;
+  type: string;
+  placeholder?: string;
+  register: UseFormRegister<any>;
+  errors: FieldErrors<any>;
+}
+
+export const CardFactory: React.FC<CardFactoryProps> = ({
+  label,
+  name,
+  type,
+  placeholder = "",
+  register,
+  errors,
+}) => {
+  const validationRules: RegisterOptions = {
+    required: `${label} es obligatorio`,
+  };
+
+  const typeKey = type.toUpperCase() as keyof typeof REGEX;
+
+  if (REGEX[typeKey]) {
+    validationRules.pattern = {
+      value: REGEX[typeKey],
+      message: ERROR_MESSAGES[typeKey],
+    };
+  }
+
+  return (
+    <div style={{ marginBottom: "1rem" }}>
+      <label htmlFor={name}>{label}</label>
+      <input
+        type={type.toLowerCase()}
+        id={name}
+        placeholder={placeholder}
+        {...register(name, validationRules)}
+      />
+      {errors[name] && (
+        <p style={{ color: "red", marginTop: "0.25rem" }}>
+          {errors[name]?.message as string}
+        </p>
+      )}
     </div>
-);
-
-export const CardFactory = (label, type, id, name) => {
-    switch (type) {
-      case "text":
-        return <Input label={label} type={type} id={id} name={name} pattern={REGEX.TEXT} error={ERROR_MESSAGES.TEXT} />;
-      case "number":
-        return <Input label={label} type={type} id={id} name={name} pattern={REGEX.NUMBER} error={ERROR_MESSAGES.NUMBER} />;
-      case "email":
-        return <Input label={label} type={type} id={id} name={name} pattern={REGEX.EMAIL} error={ERROR_MESSAGES.EMAIL} />;
-      case "password":
-        return <Input label={label} type={type} id={id} name={name} pattern={REGEX.PASSWORD} error={ERROR_MESSAGES.PASSWORD} />;
-      default:
-        throw new Error("Tipo de input no válido");
-    }
+  );
 };
