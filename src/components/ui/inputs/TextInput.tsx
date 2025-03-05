@@ -33,7 +33,7 @@ export const CardFactory: React.FC<CardFactoryProps> = ({
   }
 
   return (
-    <div style={{ marginBottom: "1rem" }}>
+    <div className="mb-4">
       <label htmlFor={name}>{label}</label>
       <input
         type={type.toLowerCase()}
@@ -42,7 +42,7 @@ export const CardFactory: React.FC<CardFactoryProps> = ({
         {...register(name, validationRules)}
       />
       {errors[name] && (
-        <p style={{ color: "red", marginTop: "0.25rem" }}>
+        <p className="text-red-600 mt-1">
           {errors[name]?.message as string}
         </p>
       )}
