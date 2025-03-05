@@ -1,25 +1,26 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+
+import HomePage from "./pages/HomePage";
+import RegisterPage from "./pages/RegisterPage";
+import AddTaskPage from "./pages/AddTaskPage";
+
 import Header from "./components/Header";
 import { Footer } from "./components/Footer";
-import Info from "./components/Info";
-import Hero from "./components/Hero";
-import Login from "./components/Login";
-import { Stadistics } from "./components/Stadistics";
-import { useAuth } from "./context/AuthContext";
-import HomePage from "./pages/HomePage";
 
 function App() {
-  const { currentUser } = useAuth();
 
   return (
     <>
     <Router>
+      <Header/>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<HomePage />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/add-task" element={<AddTaskPage/>} />
+
       </Routes>
+      <Footer/>
     </Router>
     </>
   );
