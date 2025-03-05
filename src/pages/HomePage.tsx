@@ -1,12 +1,15 @@
-import Hero from "../components/Hero"
+import Hero from "../components/Hero";
+import Info from "../components/Info";
+import Stadistics from "../components/Stadistics";
 
 function HomePage() {
-
-  return (
-    <>
-      <Hero />
-    </>
-  )
+    return (
+        <>
+            <Hero />
+            <Info />
+            <Stadistics />
+        </>
+    );
 }
 
-export default HomePage
+export default HomePage;
