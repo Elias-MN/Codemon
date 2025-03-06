@@ -1,8 +1,6 @@
-import React from "react";
-
 function Info() {
   return (
-    <div className="">
+    <div className="flex justify-center bg-blue-900">
       <div className="w-full px-4 py-20 space-y-32">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="order-1 md:order-2 text-gray-50 md:ml-16">
