@@ -1,9 +1,9 @@
 import { useForm, FormProvider } from "react-hook-form";
 
 type FormData = {
-    email: string;
-    password: string;
-  };
+  email: string;
+  password: string;
+};
 
 function LoginForm() {
 
@@ -54,10 +54,6 @@ function LoginForm() {
               <input
                 {...register("email", {
                   required: "El email es obligatorio",
-                  pattern: {
-                    value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
-                    message: "El email no es válido"
-                  }
                 })}
                 type="email"
                 id="email"
@@ -71,10 +67,6 @@ function LoginForm() {
               <input
                 {...register("password", {
                   required: "La contraseña es obligatoria",
-                  minLength: {
-                    value: 6,
-                    message: "Debe tener al menos 6 caracteres"
-                  }
                 })}
                 type="password"
                 id="password"
