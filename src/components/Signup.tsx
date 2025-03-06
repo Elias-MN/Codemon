@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function RegisterForm() {
   return (
     <div className="flex flex-col min-h-screen bg-transparent font-mulish">
@@ -36,12 +38,12 @@ function RegisterForm() {
               placeholder="Contraseña"
             />
           </div>
-          <button
+          <Link to="/profilepage"><button
             type="submit"
             className="w-full px-4 py-2 text-gray-50 bg-blue-400 rounded-lg shadow-md shadow-gray-400 hover:opacity-60 active:shadow-inner transition focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer"
           >
             Registrarse gratis
-          </button>
+          </button></Link>
         </form>
         <div className="mt-4 text-center">
           <p className="text-sm text-blue-950">
@@ -49,9 +51,9 @@ function RegisterForm() {
           </p>
           <p className="mt-2 text-sm text-blue-950">
             ¿Ya tienes una cuenta?{" "}
-            <a href="#" className="font-medium text-blue-900 underline">
+            <Link to="/login"><span className="font-medium text-blue-900 underline">
               Iniciar Sesión
-            </a>
+            </span></Link>
           </p>
         </div>
       </div>

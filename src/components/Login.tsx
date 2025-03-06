@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
+
 function LoginForm() {
   return (
     <div className="flex flex-col min-h-screen bg-transparent font-mulish">
-      
+
       <h1 className="text-2xl mb-8 font-bold text-center text-gray-50 md:hidden font-press-start-2">
         Iniciar Sesión
       </h1>
@@ -11,7 +13,7 @@ function LoginForm() {
       </div>
 
       <div className="w-11/12 max-w-md p-6 bg-gray-50 rounded-2xl shadow-xl md:w-13/24 lg:w-7/24 relative">
-        
+
         <div className="flex items-center justify-around mt-6">
           <button className="px-8 py-3 font-medium text-gray-50 bg-blue-400 rounded-lg shadow-md shadow-gray-400 hover:opacity-60 active:shadow-inner transition cursor-pointer">
             Google
@@ -42,21 +44,21 @@ function LoginForm() {
               placeholder="Contraseña"
             />
           </div>
-          
-          <button
+
+          <Link to="/profilepage"><button
             type="submit"
             className="w-full px-4 py-2 text-gray-50 bg-blue-400 rounded-lg shadow-md shadow-gray-400 hover:opacity-60 active:shadow-inner transition focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer"
           >
             Iniciar Sesión
-          </button>
+          </button></Link>
         </form>
 
         <div className="mt-4 text-center">
           <p className="text-sm text-gray-900">
             ¿Necesitas una Cuenta?{" "}
-            <a href="#" className="font-medium text-blue-900 underline">
+            <Link to="/singup"><span className="font-medium text-blue-900 underline">
               Regístrate
-            </a>
+            </span></Link>
           </p>
           <p className="mt-2 text-sm text-gray-600">
             <a href="#" className="font-medium text-blue-900 hover:underline">

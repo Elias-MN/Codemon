@@ -10,7 +10,7 @@ function Header() {
     >
       <div className="h-16 flex justify-between items-center px-6 pt-6 lg:flex-row lg:justify-start lg:gap-10 lg:py-4">
         <div className="flex items-center gap-2">
-          <span className="text-2xl font-press-start-2">Codemon</span>
+        <Link to="/"><span className="text-2xl font-press-start-2">Codemon</span></Link>
         </div>
         <div className="hidden lg:gap-10 lg:flex lg:w-4/5 lg:justify-evenly">
           <a
@@ -63,8 +63,7 @@ function Header() {
               <img className="w-6" src="/images/flecha.png" alt="flecha" />
             </span>
           </a>
-          <a
-            href="#"
+          <Link to="/login"><span
             className="flex justify-between items-center p-3 border-b border-blue-400"
           >
             <span className="font-mulish font-bold flex items-center gap-4">
@@ -74,7 +73,7 @@ function Header() {
             <span className="mx-3">
               <img className="w-6" src="/images/flecha.png" alt="flecha" />
             </span>
-          </a>
+          </span></Link>
         </div>
       )}
     </nav>
