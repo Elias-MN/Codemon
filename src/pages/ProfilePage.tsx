@@ -1,7 +1,8 @@
-import UserInfo from "../components/UserInfo";
-import Stadistics from "../components/Stadistics";
-import NewTask from "../components/NewTask";
-import TasksList from "../components/TasksList";
+import AddTask from "../components/AddTask";
+import { Stadistics } from "../components/Stadistics";
+import TasksList from "../components/TaskList";
+import { UserInfo } from "../components/UserInfo";
+
 
 
 function ProfilePage() {
@@ -9,7 +10,7 @@ function ProfilePage() {
     <>
       <UserInfo />
       <Stadistics />
-      <NewTask />
+      <AddTask />
       <TasksList />
     </>
   );

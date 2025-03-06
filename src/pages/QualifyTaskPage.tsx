@@ -1,9 +1,10 @@
-import Form from "../components/Form";
+import Qualification from "../components/Qualification";
+
 
 function QualifyTaskPage(){
     return (
         <>
-            <Form />
+            <Qualification />
         </>
     );
 

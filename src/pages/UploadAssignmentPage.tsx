@@ -1,10 +1,11 @@
-import Form from "../components/Form";
+import UploadTask from "../components/UploadTask";
+
 
 
 function UploadAssignmentPage(){
     return (
         <>
-            <Form />
+            <UploadTask />
         </>
     );
 

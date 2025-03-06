@@ -1,9 +1,11 @@
-import Form from "../components/Form";
+import Login from "../components/Login";
+
+
 
 function SessionPage(){
     return (
         <>
-            <Form />
+            <Login />
         </>
     );
 

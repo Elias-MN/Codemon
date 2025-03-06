@@ -1,9 +1,10 @@
-import Form from "../components/Form";
+import Signup from "../components/Signup";
+
 
 function RegisterPage(){
     return (
         <>
-            <Form />
+            <Signup />
         </>
     );
 

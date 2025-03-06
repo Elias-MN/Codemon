@@ -1,6 +1,6 @@
 import TaskList from "../components/TaskList";
 
-function TasListkPage(){
+function TasListPage(){
     return (
         <>
             <TaskList />
@@ -9,4 +9,4 @@ function TasListkPage(){
 
 }
 
-export default TasListkPage;
+export default TasListPage;

@@ -1,6 +1,6 @@
 import Hero from "../components/Hero";
-import Info from "../components/Info";
-import Stadistics from "../components/Stadistics";
+import Info from "../components/Info"; // Quité las llaves porque Info es un export default
+import { Stadistics } from "../components/Stadistics";
 
 function HomePage() {
     return (
@@ -13,3 +13,4 @@ function HomePage() {
 }
 
 export default HomePage;
+

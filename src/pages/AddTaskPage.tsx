@@ -1,9 +1,10 @@
-import Form from "../components/Form";
+import AddTask from "../components/AddTask";
+
 
 function AddTaskPage(){
     return (
         <>
-            <Form />
+            <AddTask />
         </>
     );
 
