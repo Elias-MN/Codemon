@@ -51,6 +51,7 @@ function Header() {
               <img className="w-6" src="/images/flecha.png" alt="flecha" />
             </span>
           </a>
+          <Link to="/recursos">
           <a
             href="#"
             className="flex justify-between items-center p-3 border-b border-blue-400"
@@ -63,6 +64,7 @@ function Header() {
               <img className="w-6" src="/images/flecha.png" alt="flecha" />
             </span>
           </a>
+          </Link>
           <Link to="/login"><span
             className="flex justify-between items-center p-3 border-b border-blue-400"
           >

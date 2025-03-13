@@ -1,5 +1,5 @@
 import { useForm, FormProvider } from "react-hook-form";
-
+import { Link } from "react-router-dom";
 type FormData = {
   email: string;
   password: string;
@@ -86,11 +86,14 @@ function LoginForm() {
         </FormProvider>
 
         <div className="mt-4 text-center">
+        
           <p className="text-sm text-gray-900">
             ¿Necesitas una Cuenta?{" "}
+            <Link to="/register">
             <a href="#" className="font-medium text-blue-900 underline">
               Regístrate
             </a>
+            </Link>
           </p>
           <p className="mt-2 text-sm text-gray-600">
             <a href="#" className="font-medium text-blue-900 hover:underline">

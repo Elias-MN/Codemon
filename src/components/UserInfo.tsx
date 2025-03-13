@@ -1,3 +1,4 @@
+
 export function UserInfo() {
   return (
     <div className="bg-blue-950 flex flex-col items-center py-4 md:py-6 lg:py-8 relative">
@@ -25,9 +26,11 @@ export function UserInfo() {
         </div>
 
         <div className="ml-auto">
+          
           <button className="bg-blue-400 text-white px-4 py-2 rounded-lg text-sm md:text-base lg:text-lg hover:opacity-60 transition-all active:opacity-60">
             Editar perfil
           </button>
+     
         </div>
       </div>
     </div>
